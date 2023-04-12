@@ -1,0 +1,6 @@
+opcode		description			Inputs			Outputs		EQU
+swi 0x00	Display character on stdout	r0, character				SWI_PrChr
+swi 0x02	Display strings on stdout	r0, start address of the string	
+swi 0x11	Half-execution
+swi 0x69	Write string to file or stdout  r0, file handle				SWI_Close
+
